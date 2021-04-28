@@ -45,6 +45,11 @@ class TestMenu(TestCase):
         menu = load("menu.json", Menu([]))
         self.assertEqual(2, len(menu.dishes))
 
+    def test_load_from_two_file(self):
+        menu = load("menu.json", Menu([]))
+        menu = load("menu.json", menu)
+        self.assertEqual(4, len(menu.dishes))
+
     def test_find_by_dish_name(self):
         menu = find_by_dish(load("menu.json", Menu([])), "яич")
         self.assertEqual(1, len(menu.dishes))
