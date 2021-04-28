@@ -1,4 +1,4 @@
-from models.Menu import Menu
+from src.models.Menu import Menu
 
 
 def find_by_dish(menu: Menu, pattern: str):

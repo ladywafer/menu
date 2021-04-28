@@ -1,8 +1,8 @@
 import json
 
-from models.DIsh import Dish
-from models.Ingredient import Ingredient
-from models.Menu import Menu
+from src.models.DIsh import Dish
+from src.models.Ingredient import Ingredient
+from src.models.Menu import Menu
 
 
 def load(path: str, menu: Menu = Menu([])):

@@ -1,6 +1,6 @@
-from db.loader import load
-from finds.finds import find_by_dish, find_by_ingredient
-from models.Menu import Menu
+from src.db.loader import load
+from src.finds.finds import find_by_dish, find_by_ingredient
+from src.models.Menu import Menu
 
 menu = load("menu.json")
 
