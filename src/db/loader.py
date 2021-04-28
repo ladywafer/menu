@@ -5,7 +5,7 @@ from src.models.Ingredient import Ingredient
 from src.models.Menu import Menu
 
 
-def load(path: str, menu: Menu = Menu([])):
+def load(path: str, menu: Menu):
     with open(path, 'r') as json_file:
         data = json.load(json_file)
         for dish in data["dishes"]:

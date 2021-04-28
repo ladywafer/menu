@@ -2,7 +2,7 @@ from src.db.loader import load
 from src.finds.finds import find_by_dish, find_by_ingredient
 from src.models.Menu import Menu
 
-menu = load("menu.json")
+menu = load("menu.json", Menu([]))
 
 while True:
     print(
